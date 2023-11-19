@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shourtcut icon" href="./img/cat-logo.ico">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,300;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.production.css">
+    <title>Thea Win</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <!--need to find a logo for webpage-->
+        <img src="./img/nav-logo.svg" alt="logo" class="nav-logo page-header__item">
+        <nav class="main-nav page-header__item">
+        <ul role="menubar" class="nav-list">
+            <li role="presentation">
+                <a href="index.html" role="menuitem" class="nav-list__item">Home</a>
+            </li>
+            <li role="presentation">
+                <a href="work.html" role="menuitem" class="nav-list__item">Work</a>
+            </li>
+            <li role="presentation">
+                <a href="about.html" role="menuitem" class="nav-list__item">About Me</a>
+            </li>
+            <li role="presentation">
+                <a href="contact.html" role="menuitem" class="nav-list__item nav-list__item--active">Contact</a>
+            </li>
+        </ul>
+        </nav>
+    </header>
+    <div class="contact">
+        <h1>Contact</h1>
+        <div class="message-form">
+            <form action="" method="post" id="contact-form">
+                <label class="standard-label" for="contact-email">Email*:</label>
+                <input type="email" id="contact-email" required>
+                <label class="standard-label" for="contact-telephone">Telephone:</label>
+                <input type="tel" required id="contact-telephone">
+                <label class="standard-label" for="contact-message">Message*:</label>
+                <textarea maxlength="240" id="contact-message" required></textarea>
+                <input type="submit" value="Send message">
+            </form>
+        </div>
+        <br>
+        <div class="contact-info">
+            Win Win Khaing @ Thea<br>
+            Singapore<br>
+            <br>
+            Tel <a href="tel:+6512345678">+6512345678</a><br>
+            Skype <a href="skype:winwinkhaing.wk.14">Thea Win</a> <br>
+            <a href="mailto:winwinkhaing.wk.14@gmail.com">mstheawin@gmail.com</a>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+            <img src="./img/8546736_github_icon.svg" alt="Github">
+            <img src="./img/5279123_tweet_twitter_twitter logo_icon.svg" alt="Twitter">
+            <img src="./img/5279114_linkedin_network_social network_linkedin logo_icon.svg" alt="LinkedIn">
+        </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
