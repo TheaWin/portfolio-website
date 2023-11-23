@@ -125,6 +125,7 @@ a:hover {
   padding: 10px;
   text-decoration: none;
   width: 100%;
+  margin: 5px;
 }
 
 .nav-list__item:visited {
