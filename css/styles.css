@@ -28,6 +28,9 @@ body {
   color: var(--text-color);
   font-size: var(--fontsize);
   line-height: 1.25em;
+}
+
+#bg-container {
   background-image: url(/img/background-stars.svg);
 }
 
@@ -47,39 +50,40 @@ a:hover {
 }
 
 .page-header {
-  display: flex;
-  width: 100%;
-  padding: 0;
+  overflow: hidden;
   background-color: var(--nav-bg-color);
-  align-items: center;
-  justify-content: center;
+  position: relative;
 }
 
-.page-header__item {
+.nav-bar {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar__item {
   flex: 0 1 200px;
 }
 
-.page-header__item:last-child {
+.nav-bar__item:last-child {
   flex-grow: 1;
   text-align: right;
 }
 
-.page-header a:hover {
-  color: var(--primary-color);
-  padding: 10px;
-  text-decoration: none;
-}
-
 .main-nav {
   max-width: 1200px;
-  align-items: center;
+}
+
+.main-nav a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
 .nav-logo {
   float: left;
   width: 200px;
   height: auto;
-  padding: var(--padding);
 }
 
 .nav-list {
@@ -87,7 +91,6 @@ a:hover {
   display: flex;
   justify-content: flex-end;
   font-size: var(--fontsize);
-  flex-wrap: wrap;
 }
 
 .nav-list li {
@@ -100,10 +103,9 @@ a:hover {
   float: right;
   color: var(--text-color);
   text-align: center;
-  padding: var(--padding);
+  padding: 0 var(--padding);
   text-decoration: none;
   width: 100%;
-  margin: 5px;
 }
 
 .nav-list__item:visited {
@@ -118,6 +120,18 @@ a:hover {
 .nav-list__item--active {
   font-size: 1.1em;
   font-weight: bold;
+}
+
+#mylinks,
+.mylinks__item {
+  display: none;
+}
+
+.icon {
+  position: absolute;
+  right: 10px;
+  top: 25px;
+  display: none;
 }
 
 .background {
@@ -277,6 +291,42 @@ h2 {
 
   h2 {
     font-size: 1.5em;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .icon {
+    display: inline-block;
+  }
+
+  .nav-bar {
+    justify-content: left;
+  }
+
+  .mylinks__item,
+  .mylinks__item:active {
+    color: var(--text-color);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: var(--fontsize);
+    display: block;
+    background-color: var(--background-color);
+  }
+
+  .mylinks__item:visited {
+    color: var(--text-color);
+  }
+
+  .mylinks__item--active,
+  .mylinks__item--active:visited {
+    color: var(--primary-color);
+  }
+
+  .mylinks__item:hover {
+    text-decoration: none;
+    color: var(--primary-color);
   }
 }
 

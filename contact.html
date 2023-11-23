@@ -7,6 +7,10 @@
     <link rel="shourtcut icon" href="./img/cat-logo.ico">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- this link is to normalize CSS (to reset all the browser styles)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link for hamburger menu icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,300;1,600&display=swap"
@@ -17,24 +21,34 @@
 
 <body>
     <header class="page-header">
-        <!--need to find a logo for webpage-->
-        <img src="./img/nav-logo.svg" alt="logo" class="nav-logo page-header__item">
-        <nav class="main-nav page-header__item">
-            <ul role="menubar" class="nav-list">
-                <li role="presentation">
-                    <a href="index.html" role="menuitem" class="nav-list__item">Home</a>
-                </li>
-                <li role="presentation">
-                    <a href="work.html" role="menuitem" class="nav-list__item">Work</a>
-                </li>
-                <li role="presentation">
-                    <a href="about.html" role="menuitem" class="nav-list__item">About Me</a>
-                </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="nav-list__item nav-list__item--active">Contact</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="nav-bar">
+            <img class="nav-logo" alt="logo" src="./img/nav-logo.svg">
+            <nav class="main-nav nav-bar__item">
+                <ul role="menubar" class="nav-list">
+                    <li role="presentation">
+                        <a href="index.html" role="menuitem" class="nav-list__item">Home</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="work.html" role="menuitem" class="nav-list__item">Work</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="about.html" role="menuitem" class="nav-list__item">About Me</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="contact.html" role="menuitem" class="nav-list__item nav-list__item--active">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="mylinks">
+            <a href="index.html" role="menuitem" class="mylinks__item">Home</a>
+            <a href="work.html" role="menuitem" class="mylinks__item">Work</a>
+            <a href="about.html" role="menuitem" class="mylinks__item">About Me</a>
+            <a href="contact.html" role="menuitem" class="mylinks__item mylinks__item--active">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </header>
     <div class="contact">
         <h1>Get in touch</h1>
@@ -63,6 +77,16 @@
         </div>
     </footer>
     <script src="js/tota11y.min.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mylinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>
