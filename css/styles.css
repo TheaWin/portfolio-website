@@ -282,9 +282,8 @@ h2 {
 
 .about {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   justify-content: center;
-  flex-wrap: wrap;
   max-width: 1200px;
   margin: 20px auto;
   align-items: center;
