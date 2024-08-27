@@ -221,11 +221,11 @@ a:hover {
 
 .grid__item {
   background-color: #343a40;
-  padding: 10px 5px;
+  padding: 10px 10px;
 }
 
 section {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 20px auto;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -235,10 +235,6 @@ section {
 h1 {
   text-align: center;
   font-size: 2.5em;
-}
-
-h2 {
-  font-size: 2em;
 }
 
 .contact {
@@ -296,10 +292,65 @@ h2 {
   text-align: center;
 }
 
+.tech-section{
+  height: 100px;
+}
+
+.work-button {
+  width: 100%;
+  margin: 10px auto;
+  border: none;
+  display: inline-block;
+  margin-bottom: 0px;
+  padding: 10px 20px;
+  background-color: #8eb4e5;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: inherit;
+  border-bottom: 2px solid rgba (0, 0, 0, 0.3);
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.work-button:hover,
+button:focus {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.work-button:hover {
+  background-color: #e5bf8e;
+}
+
+.work-button:visited {
+  color: #212529;
+}
+
+a.work-button{
+  text-decoration: none;
+}
+
+.work-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 1em;
+  margin: 0.5em 0.3em;
+}
+
 @media all and (max-width: 500px) {
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .work-image {
+    max-width: 460px;
+    max-height: 220px;
   }
 }
 
@@ -307,6 +358,12 @@ h2 {
   .grid {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .work-image {
+    width: 100%;
+    max-width: 340px;
+    max-height: 163px;
   }
 }
 
@@ -323,10 +380,6 @@ h2 {
 
   h1 {
     font-size: 2em;
-  }
-
-  h2 {
-    font-size: 1.5em;
   }
 
   .main-nav {

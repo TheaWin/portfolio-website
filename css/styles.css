@@ -195,7 +195,7 @@ a:hover {
 }
 
 section {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 20px auto;
   align-items: center;
 }
@@ -260,6 +260,45 @@ h2 {
 
 .contact-info {
   text-align: center;
+}
+
+.tech-section{
+  height: 100px;
+}
+
+.work-button {
+  width: 100%;
+  margin: 10px auto;
+  border: none;
+  display: inline-block;
+  margin-bottom: 0px;
+  padding: 10px 20px;
+  background-color:var(--primary-color);
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: inherit;
+  border-bottom: 2px solid rgba (0, 0, 0, 0.3);
+  transition: background-color 0.5s;
+}
+
+.work-button:hover,
+button:focus {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.work-button:hover {
+  background-color: var(--complementary-color);
+}
+
+.work-button:visited {
+  color: var(--background-color);
+}
+
+a.work-button{
+  text-decoration: none;
 }
 
 @media all and (max-width: 500px) {
